@@ -1,0 +1,124 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x20000000         0x00020000         xrw
+RLOG             0x10000000         0x00010000         xrw
+VECTOR           0x08000000         0x00004000
+MAZE             0x08004000         0x00004000         r
+PARAMETER        0x08008000         0x00004000         r
+FLASH            0x0800c000         0x00034000         xr
+FLASHst          0x08040000         0x00020000         xr
+RLOG_FLASH1      0x08060000         0x00020000         r
+RLOG_FLASH2      0x08080000         0x00020000         r
+RLOG_FLASH3      0x080a0000         0x00020000         r
+FLOG1            0x080c0000         0x00020000         r
+FLOG2            0x080e0000         0x00020000         r
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /usr/local/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/libm.a
+LOAD /usr/local/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/libc.a
+LOAD /usr/local/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/libgcc.a
+LOAD ../Libraries/libstm32.a
+START GROUP
+LOAD /usr/local/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7e-m/libgcc.a
+LOAD /usr/local/gcc-arm-none-eabi-4_9-2015q2/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7e-m/libc.a
+END GROUP
+                0x00001800                _Minimum_Stack_Size = 0x1800
+                0x00020000                _RAM_SIZE = 0x20000
+                0x20020000                _estack = (0x20000000 + _RAM_SIZE)
+                0x08004000                _FLASH_MAZE_START = ORIGIN (MAZE)
+                0x00004000                _FLASH_MAZE_SIZE = 0x4000
+                0x08008000                _FLASH_PRM_START = ORIGIN (PARAMETER)
+                0x00004000                _FLASH_PRM_SIZE = 0x4000
+                0x08060000                _RLOG_FLASH1_START = ORIGIN (RLOG_FLASH1)
+                0x00020000                _RLOG_FLASH1_SIZE = 0x20000
+                0x08080000                _RLOG_FLASH2_START = ORIGIN (RLOG_FLASH2)
+                0x00020000                _RLOG_FLASH2_SIZE = 0x20000
+                0x080a0000                _RLOG_FLASH3_START = ORIGIN (RLOG_FLASH3)
+                0x00020000                _RLOG_FLASH3_SIZE = 0x20000
+                0x080c0000                _FLOG1_START = ORIGIN (FLOG1)
+                0x00020000                _FLOG1_SIZE = 0x20000
+                0x080e0000                _FLOG2_START = ORIGIN (FLOG2)
+                0x00020000                _FLOG2_SIZE = 0x20000
+                0x00000008                _FLASH_MAZE_SECTOR = 0x8
+                0x00000010                _FLASH_PRM_SECTOR = 0x10
+                0x00000038                _RLOG_FLASH1_SECTOR = 0x38
+                0x00000040                _RLOG_FLASH2_SECTOR = 0x40
+                0x00000048                _RLOG_FLASH3_SECTOR = 0x48
+                0x00000050                _FLOG1_SECTOR = 0x50
+                0x00000058                _FLOG2_SECTOR = 0x58
+
+.init_array     0x08040000        0x0
+                0x08040000                . = ALIGN (0x4)
+                0x08040000                __init_array_start_st = ABSOLUTE (.)
+ *(SORT(.init_array.*))
+ *(.init_array)
+                0x08040000                . = ALIGN (0x4)
+                0x08040000                __init_array_end_st = ABSOLUTE (.)
+
+.ARM.extab
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+
+.text           0x08040000        0x0
+                0x08040000                . = ALIGN (0x4)
+ *(.text)
+ *(.text.*)
+                0x08040000                . = ALIGN (0x4)
+                0x08040000                _FLASHst_end = ABSOLUTE (.)
+
+.glue_7         0x08040000        0x0
+ .glue_7        0x00000000        0x0 linker stubs
+
+.glue_7t        0x08040000        0x0
+ .glue_7t       0x00000000        0x0 linker stubs
+
+.vfp11_veneer   0x08040000        0x0
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+
+.v4_bx          0x08040000        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.rodata         0x08040000        0x0
+                0x08040000                . = ALIGN (0x4)
+ *(.rodata)
+ *(.rodata*)
+                0x08040000                . = ALIGN (0x4)
+
+.data           0x20000000        0x0 load address 0x08040000
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdata_st = ABSOLUTE (.)
+ *(.data)
+ *(.data.*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _edata_st = ABSOLUTE (.)
+                0x08040000                _sidata_st = LOADADDR (.data)
+                0x08040000                _FLASHst_end = (LOADADDR (.data) + SIZEOF (.data))
+
+.bss            0x20000000        0x0 load address 0x08040000
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sbss_st = ABSOLUTE (.)
+ *(.bss)
+ *(.bss.*)
+ *(COMMON)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _ebss_st = ABSOLUTE (.)
+                0x20000000                _RAMst_end = ABSOLUTE (.)
+
+.empty_FLASHst  0x00000000    0x20000
+                0x00020000                . = ((ORIGIN (FLASHst) + 0x20000) - _FLASHst_end)
+ *fill*         0x00000000    0x20000 
+
+DISCARD
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+ *(.comment)
+ *(.ARM.attributes)
+ *(.debug_frame)
+OUTPUT(build/static.elf elf32-littlearm)

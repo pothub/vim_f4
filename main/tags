@@ -1,0 +1,224 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADC1data	adc.h	23;"	d
+ADC2data	adc.h	24;"	d
+ADC_Conf	adc.c	/^void ADC_Conf(){$/;"	f
+ADC_IRQ_Conf	adc.c	/^void ADC_IRQ_Conf(){$/;"	f
+ADC_REPEAT	adc.h	15;"	d
+ADC_result	adc.c	/^struct ADCdata ADC_result[nDMAC_ADC];$/;"	v	typeref:struct:ADCdata
+ADCdata	adc.h	/^struct ADCdata{ \/\/ little endian$/;"	s
+BusFault_Handler	stm32f4xx_it.c	/^void BusFault_Handler(void)$/;"	f
+CLOCK_FLASH_config	config_clock_flash.c	/^void CLOCK_FLASH_config()$/;"	f
+CONFIG_AUTOADC_H	adc.h	6;"	d
+CONFIG_CLOCK_FLASH_H	config_clock_flash.h	6;"	d
+CONFIG_ENCODER_H	config_encoder.h	6;"	d
+CONFIG_PWM_H	config_PWM.h	6;"	d
+CONFIG_TIME_H	config_time.h	6;"	d
+CPP_OBJS	makefile	/^CPP_OBJS := $(CPP_SRCS:$(SRC_DIR)%.cpp=$(OUT_DIR)%.o)$/;"	m
+CPP_SRCS	makefile	/^CPP_SRCS := $(wildcard $(SRC_DIR)*.cpp)$/;"	m
+C_OBJS	makefile	/^C_OBJS := $(C_SRCS:$(SRC_DIR)%.c=$(OUT_DIR)%.o)$/;"	m
+C_SRCS	makefile	/^C_SRCS := $(wildcard $(SRC_DIR)*.c)$/;"	m
+DMA2_Stream0_IRQHandler	adc.c	/^void DMA2_Stream0_IRQHandler() \/\/ Don't change the function name$/;"	f
+DMA_Channel_x_SIO_RX	usart.c	26;"	d	file:
+DMA_Channel_x_SIO_TX	usart.c	25;"	d	file:
+DMA_Channel_x_endADC_autoADC	adc.c	20;"	d	file:
+DMA_Channel_x_postADC_OUT_autoADC	adc.c	22;"	d	file:
+DMA_Channel_x_preADC_OUT_autoADC	adc.c	21;"	d	file:
+DMA_InitStructure_SIO_TX	usart.c	/^DMA_InitTypeDef DMA_InitStructure_SIO_TX;$/;"	v
+DMAx_IT_TCIFy_endADC_autoADC	adc.c	16;"	d	file:
+DMAx_StreamY_SIO_RX	usart.c	24;"	d	file:
+DMAx_StreamY_SIO_TX	usart.c	23;"	d	file:
+DMAx_StreamY_endADC_autoADC	adc.c	17;"	d	file:
+DMAx_StreamY_postADC_OUT_autoADC	adc.c	19;"	d	file:
+DMAx_StreamY_preADC_OUT_autoADC	adc.c	18;"	d	file:
+D_gain	prm_variable.cpp	/^float D_gain;$/;"	v
+DebugMon_Handler	stm32f4xx_it.c	/^void DebugMon_Handler(void)$/;"	f
+ESC_del_after	prm_interface.cpp	/^const char ESC_del_after[]  = {0x1b,'[','K'};$/;"	v
+FLASH_PRM_SECTOR	prm_interface.cpp	/^const unsigned FLASH_PRM_SECTOR = ((unsigned long)&_FLASH_PRM_SECTOR);$/;"	v
+FLASH_PRM_SIZE	prm_interface.cpp	/^const unsigned long FLASH_PRM_SIZE  = ((unsigned long)&_FLASH_PRM_SIZE);$/;"	v
+FLASH_PRM_START	prm_interface.cpp	/^const unsigned long FLASH_PRM_START = ((unsigned long)&_FLASH_PRM_START);$/;"	v
+FLOAT_ELEMENT	prm_variable.cpp	14;"	d	file:
+FLOAT_ELEMENT	prm_variable.cpp	25;"	d	file:
+GENERAL_H	general.h	6;"	d
+GPIO_AF_TIMx_PWM_motor	config_PWM.c	6;"	d	file:
+GPIO_AF_TIMx_encoder1	config_encoder.c	10;"	d	file:
+GPIO_AF_TIMx_encoder2	config_encoder.c	58;"	d	file:
+GPIO_PinSourceX_CH1_encoder1	config_encoder.c	13;"	d	file:
+GPIO_PinSourceX_CH1_encoder2	config_encoder.c	61;"	d	file:
+GPIO_PinSourceX_CH2_encoder1	config_encoder.c	14;"	d	file:
+GPIO_PinSourceX_CH2_encoder2	config_encoder.c	62;"	d	file:
+GPIO_PinSourceX_PWM_motor1	config_PWM.c	11;"	d	file:
+GPIO_PinSourceX_PWM_motor2	config_PWM.c	12;"	d	file:
+GPIO_PinSourceX_PWM_motor3	config_PWM.c	13;"	d	file:
+GPIO_PinSourceX_PWM_motor4	config_PWM.c	14;"	d	file:
+GPIO_PinSourceX_SIO_RX	usart.c	22;"	d	file:
+GPIO_PinSourceX_SIO_TX	usart.c	21;"	d	file:
+GPIO_Pin_x_CH1_encoder1	config_encoder.c	11;"	d	file:
+GPIO_Pin_x_CH1_encoder2	config_encoder.c	59;"	d	file:
+GPIO_Pin_x_CH2_encoder1	config_encoder.c	12;"	d	file:
+GPIO_Pin_x_CH2_encoder2	config_encoder.c	60;"	d	file:
+GPIO_Pin_x_PWM_motor1	config_PWM.c	7;"	d	file:
+GPIO_Pin_x_PWM_motor2	config_PWM.c	8;"	d	file:
+GPIO_Pin_x_PWM_motor3	config_PWM.c	9;"	d	file:
+GPIO_Pin_x_PWM_motor4	config_PWM.c	10;"	d	file:
+GPIOx_encoder1	config_encoder.c	9;"	d	file:
+GPIOx_encoder2	config_encoder.c	57;"	d	file:
+General_Config	general.c	/^void General_Config(){$/;"	f
+HEADERS	makefile	/^HEADERS := $(wildcard $(INC_DIR)*.h)$/;"	m
+HSICalibrationValue	config_clock_flash.c	7;"	d	file:
+HalfWord	config_clock_flash.c	/^union HalfWord$/;"	u	file:
+HardFault_Handler	stm32f4xx_it.c	/^void HardFault_Handler(void)$/;"	f
+INT_ELEMENT	prm_variable.cpp	15;"	d	file:
+INT_ELEMENT	prm_variable.cpp	26;"	d	file:
+I_gain	prm_variable.cpp	/^float I_gain;$/;"	v
+LDSCRIPT	makefile	/^LDSCRIPT := $(LD_DIR)stm32f4xx.ld$/;"	m
+Led0	general.c	/^void Led0(uint8_t onoff){$/;"	f
+Led1	general.c	/^void Led1(uint8_t onoff){$/;"	f
+MAX_DUTY_PWM_motor	config_PWM.h	8;"	d
+MODULE_TEST_H	module_test.h	2;"	d
+MemManage_Handler	stm32f4xx_it.c	/^void MemManage_Handler(void)$/;"	f
+NMI_Handler	stm32f4xx_it.c	/^void NMI_Handler(void)$/;"	f
+N_NAME_MAX	prm_interface.h	/^const int N_NAME_MAX=28; \/\/ 4の倍数でなければならない$/;"	v
+OUT_FILE	makefile	/^OUT_FILE := $(OUT_DIR)$(OUT_NAME)$/;"	m
+OUT_NAME	makefile	/^OUT_NAME := stm32$/;"	m
+PCLKx_Frequency_PWM_motor	config_PWM.c	15;"	d	file:
+PCLKx_Frequency_autoADC	adc.c	14;"	d	file:
+PCLKx_Frequency_sub_autoADC	adc.c	15;"	d	file:
+PRM_INTERFACE_H	prm_interface.h	2;"	d
+PRM_VARIABLE_H	prm_variable.h	2;"	d
+P_gain	prm_variable.cpp	/^float P_gain;$/;"	v
+PendSV_Handler	stm32f4xx_it.c	/^void PendSV_Handler(void)$/;"	f
+RCC_ClockCmd_GPIOx_encoder1	config_encoder.c	8;"	d	file:
+RCC_ClockCmd_GPIOx_encoder2	config_encoder.c	56;"	d	file:
+RCC_ClockCmd_TIMx_encoder1	config_encoder.c	7;"	d	file:
+RCC_ClockCmd_TIMx_encoder2	config_encoder.c	55;"	d	file:
+STARTUP_OBJ	makefile	/^STARTUP_OBJ := $(STARTUP:%.s=%.o)$/;"	m
+STATIC_DIR	makefile	/^STATIC_DIR := ..\/static\/$/;"	m
+STATIC_ELF	makefile	/^STATIC_ELF := $(STATIC_DIR)$(OUT_DIR)static.elf$/;"	m
+SVC_Handler	stm32f4xx_it.c	/^void SVC_Handler(void)$/;"	f
+Sw0	general.c	/^uint8_t Sw0(){$/;"	f
+Sw1	general.c	/^uint8_t Sw1(){$/;"	f
+SysTick_Handler	stm32f4xx_it.c	/^void SysTick_Handler(void)$/;"	f
+TIM_EncoderMode_xxx_encoder1	config_encoder.c	16;"	d	file:
+TIM_EncoderMode_xxx_encoder2	config_encoder.c	64;"	d	file:
+TIM_ICPolarity_xxx_CH1_encoder1	config_encoder.c	17;"	d	file:
+TIM_ICPolarity_xxx_CH1_encoder2	config_encoder.c	65;"	d	file:
+TIM_ICPolarity_xxx_CH2_encoder1	config_encoder.c	18;"	d	file:
+TIM_ICPolarity_xxx_CH2_encoder2	config_encoder.c	66;"	d	file:
+TIM_OCMode_PWMx_PWM_motor	config_PWM.c	17;"	d	file:
+TIM_Period_PWM_motor	config_PWM.c	/^uint16_t TIM_Period_PWM_motor;$/;"	v
+TIM_SetCompareX_motorA_backward	config_PWM.c	19;"	d	file:
+TIM_SetCompareX_motorA_forward	config_PWM.c	18;"	d	file:
+TIM_SetCompareX_motorB_backward	config_PWM.c	21;"	d	file:
+TIM_SetCompareX_motorB_forward	config_PWM.c	20;"	d	file:
+TIM_config_for_PWM_motor	config_PWM.c	/^void TIM_config_for_PWM_motor(){$/;"	f
+TIM_config_for_encoder1	config_encoder.c	/^void TIM_config_for_encoder1()$/;"	f
+TIM_config_for_encoder2	config_encoder.c	/^void TIM_config_for_encoder2()$/;"	f
+TIMx_PWM_motor	config_PWM.c	16;"	d	file:
+TIMx_encoder1	config_encoder.c	15;"	d	file:
+TIMx_encoder2	config_encoder.c	63;"	d	file:
+TIMx_sub_autoADC	adc.c	13;"	d	file:
+TRX_BUFFER_SIZE	usart.c	3;"	d	file:
+TYPE_FLOAT	prm_interface.h	/^const int TYPE_FLOAT=1;$/;"	v
+TYPE_INT	prm_interface.h	/^const int TYPE_INT=2;$/;"	v
+USART1_Conf	usart.c	/^void USART1_Conf(){$/;"	f
+USART_H	usart.h	6;"	d
+UsageFault_Handler	stm32f4xx_it.c	/^void UsageFault_Handler(void)$/;"	f
+VoltageRange_x	config_clock_flash.c	10;"	d	file:
+__STM32F4xx_IT_H	stm32f4xx_it.h	24;"	d
+__env	syscall.c	/^char *__env[1] = { 0 };$/;"	v
+_astat	syscall.c	/^int _astat(char *file, struct stat *st)$/;"	f
+_close	syscall.c	/^int _close(int file)$/;"	f
+_execve	syscall.c	/^int _execve(char *name, char **argv, char **env)$/;"	f
+_exit	syscall.c	/^void _exit(int status)$/;"	f
+_fork	syscall.c	/^int _fork(void)$/;"	f
+_fstat	syscall.c	/^int _fstat(int file, struct stat *st)$/;"	f
+_getpid	syscall.c	/^int _getpid(void)$/;"	f
+_isatty	syscall.c	/^int _isatty(int file)$/;"	f
+_kill	syscall.c	/^int _kill(int pid, int sig)$/;"	f
+_link	syscall.c	/^int _link(char *old, char *new)$/;"	f
+_lseek	syscall.c	/^int _lseek(int file, int ptr, int dir)$/;"	f
+_open	syscall.c	/^int _open(const char *name, int flags, int mode)$/;"	f
+_read	syscall.c	/^int _read(int file, char *ptr, int len)$/;"	f
+_sbrk	syscall.c	/^caddr_t _sbrk(int incr)$/;"	f
+_unlink	syscall.c	/^int _unlink(char *name)$/;"	f
+_wait	syscall.c	/^int _wait(int *status)$/;"	f
+_write	syscall.c	/^int _write(int file, char *ptr, int len)$/;"	f
+abs_time	adc.c	/^volatile float abs_time = 0; \/\/ [s]$/;"	v
+addr	prm_interface.h	/^	void *addr;$/;"	m	struct:st_prm
+buff	usart.c	/^    char buff[TRX_BUFFER_SIZE];$/;"	m	struct:__anon1	file:
+byte	config_clock_flash.c	/^	uint8_t byte[2];$/;"	m	union:HalfWord	file:
+clear_rxb	usart.c	/^void clear_rxb()$/;"	f
+data1	adc.h	/^	uint16_t data1;$/;"	m	struct:ADCdata
+data2	adc.h	/^	uint16_t data2;$/;"	m	struct:ADCdata
+date_str	date_str.c	/^const char date_str[] = __DATE__;$/;"	v
+delete_char	prm_interface.cpp	/^void delete_char(char *s, int *cur)$/;"	f
+dt_int	adc.h	13;"	d
+dt_postADC	adc.c	26;"	d	file:
+dt_preADC	adc.c	25;"	d	file:
+duty_here	adc.c	/^volatile int duty_here()$/;"	f
+duty_int_routine	adc.c	/^int duty_int_routine;$/;"	v
+duty_int_routine_max	adc.c	/^int duty_int_routine_max = 0;$/;"	v
+edit_prms	prm_interface.cpp	/^int edit_prms()$/;"	f
+environ	syscall.c	/^char **environ = __env;$/;"	v
+erase_flash_sector	config_clock_flash.c	/^void erase_flash_sector(uint32_t FLASH_Sector)$/;"	f
+errno	syscall.c	7;"	d	file:
+f_PWM_motor	config_PWM.c	4;"	d	file:
+get_cnt_encoder1	config_encoder.c	/^short get_cnt_encoder1(){ return TIM_GetCounter(TIMx_encoder1); }$/;"	f
+get_cnt_encoder2	config_encoder.c	/^short get_cnt_encoder2(){ return TIM_GetCounter(TIMx_encoder2); }$/;"	f
+get_time	config_time.c	/^float get_time()$/;"	f
+half_word	config_clock_flash.c	/^	uint16_t half_word;$/;"	m	union:HalfWord	file:
+head	usart.c	/^    unsigned int head, tail;$/;"	m	struct:__anon1	file:
+inbyte	usart.c	/^char inbyte()$/;"	f
+init_heap_end	syscall.c	/^char *init_heap_end; \/\/ This should be initialized in startup routine$/;"	v
+init_prm	prm_variable.cpp	/^void init_prm()$/;"	f
+inkey	usart.c	/^volatile char inkey()$/;"	f
+insert_char	prm_interface.cpp	/^void insert_char(char *s, int *cur, char c)$/;"	f
+int_post_process	adc.c	/^void int_post_process()$/;"	f
+int_pre_process	adc.c	/^void int_pre_process()$/;"	f
+load_prms	prm_interface.cpp	/^void load_prms()$/;"	f
+main	main.cpp	/^int main(void){$/;"	f
+module_test_low_level	module_test.cpp	/^void module_test_low_level()$/;"	f
+nADC	adc.h	14;"	d
+nDMAC_ADC	adc.h	16;"	d
+n_column	prm_interface.cpp	/^const static int n_column = 1;$/;"	v	file:
+n_prm	prm_interface.cpp	/^int n_prm = 0;$/;"	v
+name	prm_interface.h	/^	char name[N_NAME_MAX];$/;"	m	struct:st_prm
+outbyte	usart.c	/^void outbyte(char c)$/;"	f
+print_prms	prm_interface.cpp	/^void print_prms()$/;"	f
+prm	prm_interface.cpp	/^const struct st_prm *prm;$/;"	v	typeref:struct:st_prm
+prm_array	prm_variable.cpp	/^const struct st_prm prm_array[]={$/;"	v	typeref:struct:st_prm
+put_ESC_move_left	prm_interface.cpp	/^void put_ESC_move_left(int n)$/;"	f
+put_ESC_move_right	prm_interface.cpp	/^void put_ESC_move_right(int n)$/;"	f
+restart_periodic_interrupt	adc.c	/^void restart_periodic_interrupt()$/;"	f
+rxb	usart.c	/^} txb,rxb; \/\/ FIFOバッファ$/;"	v	typeref:struct:__anon1
+save_prms	prm_interface.cpp	/^int save_prms()$/;"	f
+set_cnt_encoder1	config_encoder.c	/^void set_cnt_encoder1(short cnt){ TIM_SetCounter(TIMx_encoder1, cnt); }$/;"	f
+set_cnt_encoder2	config_encoder.c	/^void set_cnt_encoder2(short cnt){ TIM_SetCounter(TIMx_encoder2, cnt); }$/;"	f
+set_duty_PWM_motorA	config_PWM.c	/^void set_duty_PWM_motorA(int duty)$/;"	f
+set_duty_PWM_motorB	config_PWM.c	/^void set_duty_PWM_motorB(int duty)$/;"	f
+show_help_edit_prm	prm_interface.cpp	/^void show_help_edit_prm()$/;"	f
+st_prm	prm_interface.h	/^struct st_prm$/;"	s
+stack_ptr	syscall.c	2;"	d	file:
+start_timer	config_time.c	/^void start_timer()$/;"	f
+startup	startup.c	/^void startup()$/;"	f
+stop_periodic_interrupt	adc.c	/^void stop_periodic_interrupt()$/;"	f
+subTIM_period	adc.c	/^uint16_t subTIM_period;$/;"	v
+subTIM_value	adc.c	/^int subTIM_value;$/;"	v
+tail	usart.c	/^    unsigned int head, tail;$/;"	m	struct:__anon1	file:
+time_count	adc.c	/^volatile uint64_t time_count = 0;$/;"	v
+time_str	date_str.c	/^const char time_str[] = __TIME__;$/;"	v
+txb	usart.c	/^} txb,rxb; \/\/ FIFOバッファ$/;"	v	typeref:struct:__anon1
+type	prm_interface.h	/^	int type;$/;"	m	struct:st_prm
+var1	prm_variable.cpp	/^int var1;$/;"	v
+var2	prm_variable.cpp	/^int var2;$/;"	v
+verify_prms	prm_interface.cpp	/^int verify_prms()$/;"	f
+wait	config_time.c	/^void wait(float time)$/;"	f
+write_1byte_to_flash	config_clock_flash.c	/^void write_1byte_to_flash(uint32_t address, uint8_t data)$/;"	f
+write_2bytes_to_flash	config_clock_flash.c	/^void write_2bytes_to_flash(uint32_t address, uint16_t data)$/;"	f
+write_4bytes_to_flash	config_clock_flash.c	/^void write_4bytes_to_flash(uint32_t address, uint32_t data)$/;"	f
+write_count	prm_variable.cpp	/^int write_count;$/;"	v

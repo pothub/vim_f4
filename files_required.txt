@@ -1,0 +1,19 @@
+################################################################################
+    Required files and directories
+################################################################################
+1. directory: /Libraries/CMSIS/Device
+2. directory: /Libraries/CMSIS/Include
+	from STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Libraries/CMSIS/
+
+3. directory: /Libraries/STM32F4xx_StdPeriph_Driver
+	from STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Libraries/
+
+4. file: /Libraries/stm32f4xx_conf.h
+5. file: /Libraries/system_stm32f4xx.c
+6. file: /main/stm32f4xx_it.c
+7. file: /main/stm32f4xx_it.h
+	from STM32F4xx_DSP_StdPeriph_Lib_V1.0.0/Project/STM32F4xx_StdPeriph_Templates/
+	Comment out lines below in stm32f4xx_it.c,
+		Line  26: #include "main.h"
+		Line 138: TimingDelay_Decrement();
+

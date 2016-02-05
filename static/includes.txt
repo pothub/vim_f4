@@ -1,0 +1,8 @@
+/* example
+EXTERN(printf)
+EXTERN(vsprintf)
+EXTERN(atof)
+EXTERN(putchar)
+EXTERN(puts)
+*/
+
