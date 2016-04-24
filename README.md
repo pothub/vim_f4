@@ -10,3 +10,11 @@ Build and Test Environment based on Ubuntu 16.04 LTS for the My F4-Mini board
 	cd ~/main/
 	make t
 ## 2.2 Flush Project
+Change to uart write mode
+
+Press the RESET while pressing the SW0
+
+If write and view uart debug
+	make f
+If only write
+	make ff
