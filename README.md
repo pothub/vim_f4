@@ -15,8 +15,10 @@ Change to STM32 uart write mode
 Press the RESET while pressing the SW0
 
 If write and view uart debug
+
 	make f
 
 If only write
+
 	make ff
 
